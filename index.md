@@ -3,20 +3,24 @@
 #### 一、考公
 
 #### 二、Languages
-##### Chinese
-##### Japanese
-##### English
+##### § 1 Chinese - 母语
+##### § 2 Japanese
+##### § 3 English
 
 #### 三、IT
-##### git & github
+##### § 1 git & Github
 
-§ 1.1 git 安装使用
-[git 下载、安装、基本操作](./git-1.html)
+1.1 git 安装使用
+① [git 下载、安装、基本操作](./git-1.html)
 
-§ 1.2 GitHub 建立个人网页
-§ 1.3 gitbook
+1.2 GitHub 建立个人网页
+1.3 gitbook
 
-##### vscode
+##### § 2 VSCode
+2.1 基本操作
+2.2 常用插件
+
+##### § 3 Anki-记忆软件
 
 
 PS：❤ love qian
