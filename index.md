@@ -1,13 +1,13 @@
 ### my nodes for something
 
-#### 考公
+#### 一、考公
 
-#### Languages
+#### 二、Languages
 ##### Chinese
 ##### Japanese
 ##### English
 
-#### IT
+#### 三、IT
 ##### git & github
 
 § 1.1 git 安装使用
