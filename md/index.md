@@ -30,7 +30,7 @@
 #### 三、IT
 
 ##### MDN WEB 前后端
-① [test](./1111.html)
+① [test](../test.html)
 
 ##### § 1 git & Github
 
