@@ -157,80 +157,99 @@
     // make sure global mdn object exists
     var mdn = window.mdn || {};
 
-    (function(win) {
-        'use strict';
+    (function (win) {
+      'use strict';
 
-        (function(){
-  var FLAGS = {
-    'kumaediting': false,'page_move': false,'section_edit': false,'spam_checks_enabled': true,'spam_submissions_enabled': false,'spam_admin_override': false,'spam_spammer_override': false,'spam_testing_mode': false,'sg_task_completion': false,'contrib_beta': false,'recurring_payment_beta': true
-    },
-    SWITCHES = {
-    'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'foundation_callout': false,'helpful-survey-2': true,'wiki_spam_training': true,'registration_disabled': false
-    },
-    SAMPLES = {
-    
-    };
-  window.waffle = {
-    "flag_is_active": function waffle_flag(flag_name) {
-      
-      return !!FLAGS[flag_name];
-    },
-    "switch_is_active": function waffle_switch(switch_name) {
-      
-      return !!SWITCHES[switch_name];
-    },
-    "sample_is_active": function waffle_sample(sample_name) {
-      
-      return !!SAMPLES[sample_name];
-    },
-    "FLAGS": FLAGS,
-    "SWITCHES": SWITCHES,
-    "SAMPLES": SAMPLES
-  };
-})();
+      (function () {
+        var FLAGS = {
+            'kumaediting': false,
+            'page_move': false,
+            'section_edit': false,
+            'spam_checks_enabled': true,
+            'spam_submissions_enabled': false,
+            'spam_admin_override': false,
+            'spam_spammer_override': false,
+            'spam_testing_mode': false,
+            'sg_task_completion': false,
+            'contrib_beta': false,
+            'recurring_payment_beta': true
+          },
+          SWITCHES = {
+            'welcome_email': true,
+            'application_ACAO': true,
+            'store_revision_ips': true,
+            'foundation_callout': false,
+            'helpful-survey-2': true,
+            'wiki_spam_training': true,
+            'registration_disabled': false
+          },
+          SAMPLES = {
 
+          };
+        window.waffle = {
+          "flag_is_active": function waffle_flag(flag_name) {
 
-        // This needs to be set before ckeditor.js loads
-        window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor4/build/ckeditor/';
+            return !!FLAGS[flag_name];
+          },
+          "switch_is_active": function waffle_switch(switch_name) {
 
-        // Site configuration
-        win.mdn.ckeditor = {};
-        win.mdn.features = {};
-        win.mdn.siteUrl = '';
-        win.mdn.staticPath = 'https://developer.mozilla.org/static/';
-        win.mdn.wiki = {
-            autosuggestTitleUrl: '/zh-CN/docs/get-documents'
+            return !!SWITCHES[switch_name];
+          },
+          "sample_is_active": function waffle_sample(sample_name) {
+
+            return !!SAMPLES[sample_name];
+          },
+          "FLAGS": FLAGS,
+          "SWITCHES": SWITCHES,
+          "SAMPLES": SAMPLES
         };
-        win.mdn.assets = {
-            css: {
-                'editor-content': ['https://developer.mozilla.org/static/build/styles/editor-content.efa24314b9ee.css','https://developer.mozilla.org/static/build/styles/editor-locale-zh-CN.bd1628bd7474.css',
-                ],
+      })();
 
-                'wiki-compat-tables': ['https://developer.mozilla.org/static/build/styles/wiki-compat-tables.eef64bf9b6fe.css',]
-            },
-            js: {
-                'syntax-prism': ['https://developer.mozilla.org/static/build/js/syntax-prism.55264ed331d2.js',],
-                'wiki-compat-tables': ['https://developer.mozilla.org/static/build/js/wiki-compat-tables.3a4ab2cc8ca1.js',]
-            }
-        };
 
-        win.mdn.notifications = [];
-        win.mdn.contributions = {
-            enabled: true,
-            popup: false
-        };
+      // This needs to be set before ckeditor.js loads
+      window.CKEDITOR_BASEPATH = 'https://developer.mozilla.org/static/js/libs/ckeditor4/build/ckeditor/';
 
-        
+      // Site configuration
+      win.mdn.ckeditor = {};
+      win.mdn.features = {};
+      win.mdn.siteUrl = '';
+      win.mdn.staticPath = 'https://developer.mozilla.org/static/';
+      win.mdn.wiki = {
+        autosuggestTitleUrl: '/zh-CN/docs/get-documents'
+      };
+      win.mdn.assets = {
+        css: {
+          'editor-content': ['https://developer.mozilla.org/static/build/styles/editor-content.efa24314b9ee.css',
+            'https://developer.mozilla.org/static/build/styles/editor-locale-zh-CN.bd1628bd7474.css',
+          ],
 
-        // interactive editor config
-        win.mdn.interactiveEditor = {
-            siteUrl: "https://developer.mozilla.org",
-            editorUrl: "https://interactive-examples.mdn.mozilla.net"
-        };
-        win.mdn.langCookieName = "django_language";
+          'wiki-compat-tables': [
+            'https://developer.mozilla.org/static/build/styles/wiki-compat-tables.eef64bf9b6fe.css',
+          ]
+        },
+        js: {
+          'syntax-prism': ['https://developer.mozilla.org/static/build/js/syntax-prism.55264ed331d2.js', ],
+          'wiki-compat-tables': ['https://developer.mozilla.org/static/build/js/wiki-compat-tables.3a4ab2cc8ca1.js', ]
+        }
+      };
+
+      win.mdn.notifications = [];
+      win.mdn.contributions = {
+        enabled: true,
+        popup: false
+      };
+
+
+
+      // interactive editor config
+      win.mdn.interactiveEditor = {
+        siteUrl: "https://developer.mozilla.org",
+        editorUrl: "https://interactive-examples.mdn.mozilla.net"
+      };
+      win.mdn.langCookieName = "django_language";
 
     })(this);
-</script>
+  </script>
 
   <!-- Header -->
   <header id="main-header" class="header-main">
@@ -252,22 +271,6 @@
         <!-- action buttons -->
         <div class="document-actions">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
       </div>
     </div>
@@ -286,15 +289,6 @@
 
               <!-- center: main article content -->
               <div id="wiki-content" class="column-main wiki-column text-content">
-
-
-
-
-
-
-
-
-
 
 
 
@@ -527,8 +521,7 @@ tfoot th {
                   <p>现在我们来画图形和颜色！因为表格上满是“朋克“和”态度“，我们需要给它一些鲜艳的造型来适应。别担心，你不必让你的表格”燥起来“，你可以选择一些更微妙、更有品位的东西。</p>
 
                   <p>首先将下面的CSS添加到<code>style.css</code>文件中，在底部添加:</p>
-
-                  <pre>thead, tfoot {
+                  <pre class="brush: css">thead, tfoot {
   background: url(leopardskin.jpg);
   color: white;
   text-shadow: 1px 1px 1px black;
