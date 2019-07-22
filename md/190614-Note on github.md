@@ -1,5 +1,4 @@
-190614
-Note on GitHub
+190614-Note on GitHub
 
 摘要:平时的笔记上传,日常碎片时间记忆
 尝试过一些笔记软件,wiznote.印象笔记...
